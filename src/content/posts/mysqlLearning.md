@@ -207,6 +207,18 @@ MySQL 与 SQLite 不同， 不能通过 `sqlite3 databaseName.db` 在当前路�
 
 注意不要直接使用 `f"SELECT id FROM tableName WHERE name = {name}"` 之类的语句，可能会遭到用户的恶意输入的攻击，尽量使用 `"SELECT id FROM tableName WHERE name = ?", name` 这样的语句能有效避免攻击。
 
+## 补充
+
+### 标量子查询
+
+```SQL
+SELECT (
+  SELECT name FROM students WHERE id = 100
+) AS name;
+```
+
+可以做到强制返回 **NULL**，即使没有查询到对应的内容。
+
 ## 最后的最后
 
 ![CS50x 2026 SQL 课结尾的漫画：Little Bobby Tables，用名字中的 SQL 注入语句删除学生数据表](../../assets/images/xkcd-327-exploits-of-a-mom.png)
