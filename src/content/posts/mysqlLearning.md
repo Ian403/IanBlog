@@ -1,7 +1,7 @@
 ---
 title: MySQL 学习记录
 author: Ian
-pubDatetime: 2026-09-23T00:00:00+08:00
+pubDatetime: 2026-09-22T22:45:00+08:00
 featured: true
 draft: false
 tags:
@@ -206,6 +206,15 @@ MySQL 与 SQLite 不同， 不能通过 `sqlite3 databaseName.db` 在当前路�
 ## **Python 连接 MySQL**
 
 注意不要直接使用 `f"SELECT id FROM tableName WHERE name = {name}"` 之类的语句，可能会遭到用户的恶意输入的攻击，尽量使用 `"SELECT id FROM tableName WHERE name = ?", name` 这样的语句能有效避免攻击。
+
+### **pandas** 库
+Python 中还有 pandas 库用于数据的处理、分析。
+
+```
+施工中
+
+
+```
 
 ## 补充
 
