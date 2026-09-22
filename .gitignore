@@ -35,3 +35,6 @@ compose.override.yaml
 # tokens
 
 tokens.txt
+
+# local progress notes
+/progress.md

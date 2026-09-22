@@ -9,7 +9,6 @@ tags:
 ogImage: ../../assets/images/MyFirstBlog.jpg # src/assets/images/example.png
 # ogImage: "https://example.org/remote-image.png" # remote URL
 description: This is the example description of the example post.
-canonicalURL: https://example.org/my-article-was-already-posted-here
 ---
 
 # Ian 的第一篇博客
